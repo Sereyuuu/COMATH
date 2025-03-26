@@ -80,16 +80,20 @@
     <div class="row">
         <div class="col-md-4 bg-dark text-white boom">
             <h1>DEFINITION</h1>
-            <p>An arithmetic sequence is where the difference (d) between any two consecutive terms is always constant.</p>
-            <p>The nth term of the arithmetic sequence with the first term a<sub>1</sub> and the common difference (d) is given by the following formula.</p>
+            <p>Starts with a zero, followed by a one, then by another one, and then by a series of increasing numbers. The sequence follows the rule that each number is equal to the sum of the preceding or previous two numbers.</p>
+            <p><b>FUN FACT:</b> The Fibonacci sequence is often associated with the golden ratio</p>
+
         </div>
 
         <div class="col-md-8 bg-dark text-white text-center boom">
-            <h1>FORMULAS</h1>
-            <h2>GENERAL FORMULA</h2>
-            <img src="geneari.png" width="450px" height="450px">
-            <h2>ARITHMETIC SERIES</h2>
-            <img src="ariseries.png" width="450px" height="450px">
+            <h1>BINET'S FORMULA</h1>
+            
+            <h2>VERSION 1</h2>
+            <img src="simpbi.png" width="350px" height="450px">
+            
+            <h2>VERSION 2</h2>
+            <img src="longbi.png" width="550px" height="450px">
+
         </div>
     </div>
 
@@ -102,7 +106,6 @@
                         <tr>
                             <th>Number</th>
                             <th>Mathematical Problem</th>
-                            <th>Given</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -112,58 +115,31 @@
                              
                              <td>A baby rabbit is born in a small garden. After one month, another baby rabbit is born. From the second month onward, where each month, the number of new rabbits is the sum of the previous two months. 
                             <br>
-                            a.) How many baby rabbits will there be in the 6th month?
+                            a.) How many baby rabbits will there be in the <b>6th month</b>?
                             <br>
-                            b.) What is the total number of baby rabbits after 6 months?
+                            b.) What is the total number of baby rabbits after <b>6 months</b>?
 
                             </td>
-
-                        <td>
-                            
-                            a<sub>n</sub>= 6
-                            <br>
-                            a<sub>1</sub>= 1
-
-                        </td>
                        
                         </tr>
                        
                         <tr>
                             <td>2</td>
                             
-                            <td>Mikey is a high school student that has a weekly allowance. He gets 500 pesos every week. Mikey is an honor student and gets good grades on his tests, and as a reward, his parents add a certain amount of money to his allowance every month. This started in January, so his allowance during this month became 1,000 pesos. The next month he was able to earn 1,500 pesos. In March he gets 2,500 as his allowance and gets 4,000 in April. How much money will Mikey get in March and June?
+                            <td>Mikey is a high school student that has a weekly allowance. He gets 500 pesos every week. Mikey is an honor student and gets good grades on his tests, and as a reward, his parents add a certain amount of money to his allowance every month. This started in January, so his allowance during this month became <b>1,000 pesos</b>. The next month he was able to earn <b>1,500 pesos</b>. In March he gets <b>2,500</b> as his allowance and gets <b>4,000</b> in April. How much money will Mikey get in March and June?
 
                             </td>
 
-                            <td>
-
-                             a<sub>n</sub>= 5
-                            <br>
-                            a<sub>1</sub>= 2
-                            <br>
-                            r = 2
-
-                            </td>
                         </tr>
                         
                         <tr>
                             <td>3</td>
                             
-                            <td>Dylan is saving money every week following a pattern. She saves 100 pesos in the first week and 150 pesos in the second week. Each week after that, the amount she saves is the sum of the savings from the previous two weeks. 
+                            <td>Dylan is saving money every week following a pattern. She saves <b>100 pesos</b> in the first week and <b>150 pesos</b> in the second week. Each week after that, the amount she saves is the sum of the savings from the previous two weeks. 
                                 <br>
-                                a.)How much will Anna save in the 6th week? 
+                                a.) How much will Anna save in the <b>6th week</b>? 
                                 <br>
-                                b.)What is the total amount she has saved after 6 weeks?
-                            </td>
-                            
-                            <td>
-
-                                a<sub>n</sub>= 5
-                                <br>
-                                a<sub>1</sub>= 2
-                                <br>
-                                r = 2
-
+                                b.) What is the total amount she has saved after <b>6 weeks</b>?
                             </td>
 
                         </tr>
@@ -176,32 +152,123 @@
     <div class="row">
         <div class="col-md-4 bg-dark text-white boom">
             <h1>MATHEMATICAL PROBLEM 1</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            
+            <hr>
+
+            <p><i>a.) How many baby rabbits will there be in the 6th month?</i></p>
+
+            <p><u>Month 1:</u> 1 F(1) = 1 </p>
+            <p><u>Month 2:</u>  1 F(2) = 1</p>
+            <p><u>Month 3:</u> 1+1= 2 F(3)= 2 <i>(Add the two previous terms)</i></p>
+            <p><u>Month 4:</u> 1+2=3  F(4)=3 <i>(Add the 2nd and 3rd month)</i></p>
+            <p><u>Month 5:</u> 2+3=5 F(5)= 5 <i>(Add the 3rd and 4th month)</i></p>
+            <p><u>Month 6:</u> 3+5=8 F(6)=8 <i>(Add the 4th and 5th month)</i></p>
+            <p><b>F(6)=8</b></p>
+
+            <p><b><u>FINAL ANSWER:</u> There are 8 rabbits in the 6th month.</b></p>
+
+            <hr>
+
+            <p><i>b.) What is the total number of baby rabbits after 6 months?</i></p>
+
+            <p>Sum up all of the terms from the first month to the sixth month</p>
+            <p>F(1)+F(2)+F(3)+F(4)+F(5)+F(6)</p>
+
+            <p>= 1 +1 + 2 + 3 + 5 + 8 = 20</p>
+
+            <p><b><u>FINAL ANSWER:</u> There are a total of 20 rabbits after 6 months.</b></p>
+
         </div>
        
         <div class="col-md-4 bg-dark text-white boom">
             <h1>MATHEMATICAL PROBLEM 2</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+            <hr>
+
+            <p><b>GIVEN:</b></p>
+            
+            <p><b>Mikey’s monthly allowance:</b></p>
+            
+            <p><u>January</u> = 1000 pesos </p>
+            
+            <p><u>February</u> = 1500 pesos </p>
+            
+            <p><u>March</u> = 2500 pesos </p>
+            
+            <p><u>April</u> = 4000 pesos</p>
+
+            <hr>
+
+            <p><b>Identifying the pattern:</b></p>
+            
+            <p><u>January</u> = 1,000 </p>
+            
+            <p><u>February</u> = 1,500 + 1,000 = 2,500 <i>(As you can see, March is the sum between January and February)</i></p>
+            
+            <p><u>March</u> = 2,500 + 1,500 = 4,000 <i>(Same goes for April, it’s the sum between March and February)</i></p>
+            
+            <p><u>April</u> = 4,000</p> 
+            
+            <p><u>May</u> = ?</p>
+            
+            <p><u>June</u> = ?</p>
+
+            <hr>
+
+            <p>Knowing the pattern, we can know the allowance in May by adding the allowances for April and March as they’re both the previous terms before May. This pattern applies to June. We can know the allowance in June by adding the allowances in May and April.</p>
+
+            <p>Therefore:</p>
+            
+            <p><u>May =</u> 4000 + 2500 = 6,500</p>
+            
+            <p><u>June =</u> 6500 + 4000 = 10,500</p>
+            
+            <p>Allowance in May  = 6,500</p>
+            
+            <p>Allowance in June = 10,500</p>
+
+            <p><b><u>FINAL ANSWER:</u> Mikey will get 6,500 pesos in May and 10,500 pesos in June.</b></p>
+
         </div>
 
         <div class="col-md-4 bg-dark text-white boom">
             <h1>MATHEMATICAL PROBLEM 3</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            
+            <hr>
+
+            <p>GIVEN:</p>
+            
+            <p><u>1st week:</u> 100 pesos</p>
+            
+            <p><u>2nd week:</u> 150 pesos</p>
+            
+            <p><u>3rd to 6th week:</u> ?</p>
+
+            <hr>
+            
+            <p><i>a.) How much will Anna save in the 6th week?</i></p>
+
+            <p>Since the amount she saves is the sum of the savings from the previous two weeks</p>
+
+            <p><u>3rd week:</u> 100+ 150 = 250 <i>(Add the first two terms together for the third term)</i></p>
+
+            <p><u>4th week:</u> 250+ 150 = 400 <i>(Add the 2nd and 3rd term)</i></p>
+
+            <p><u>5th week:</u> 400+ 250 = 650 <i>(Add the 3rd and 4th term)</i></p>
+
+            <p><u>6th week:</u> 650+ 400 = 1050 <i>(Add the 4th and 5th term)</i></p>
+
+            <p><b><u>FINAL ANSWER:</u> The amount of money Anna saved in the 6th week is 1,050 pesos.</p></b>
+
+            <hr>
+
+            <p><i>b.)What is the total amount she has saved after 6 weeks?</i></p>
+
+            <p>Add all of the terms together from the 1st week to the 6th week</p>
+
+            <p>100 + 150 + 250 + 400 + 650 + 1050 = 2,600</p>
+
+            <p><b><u>FINAL ANSWER:</u> The total amount of money she saved after 6 weeks is 2,600 pesos.</p></b>
         </div>
     </div>
 </div>
